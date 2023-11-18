@@ -5,6 +5,8 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import Home from './pages/home/Home';
 import Order from './pages/order/Order';
@@ -20,19 +22,37 @@ import UpdateProduct from './pages/admin/page/UpdateProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from './pages/allproducts/Allproducts';
+import Contact from './components/Contact/Contact';
+import Aboutus from './components/Aboutus/About';
+import EnquiryForm from './components/Help/help';
+import ShippingPolicy from './components/AllPolicy/Shiping';
+import TermsAndConditions from './components/AllPolicy/terms';
+import PrivacyPolicy from './components/AllPolicy/privacy';
+import Feedback from './components/Feedback/Feed';
+import ReturnRefundPolicy from './components/AllPolicy/ReturnRefundPolicy';
 function App() {
   return (
     <MyState>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/help" element={<EnquiryForm />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/term-and-conditon" element={<TermsAndConditions />} />
+          <Route path="/Shipping" element={<ShippingPolicy />} />
           <Route path="/allproducts" element={<Allproducts />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/ReturnRefundPolicy" element={<ReturnRefundPolicy />} />
+
+
           <Route path="/order" element={
             <ProtectedRoute>
               <Order />
             </ProtectedRoute>
           } />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
           <Route path="/dashboard" element={
             <ProtectedRouteForAdmin>
               <Dashboard />

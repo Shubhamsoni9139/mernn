@@ -1,11 +1,31 @@
-import React from 'react'
+import React from 'react';
 
-function HeroSection() {
-  return (
-    <div>
-        <img src="https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" alt="" />
-    </div>
-  )
+class HeroSection extends React.Component {
+  render() {
+    return (
+      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img className="d-block w-100" src="https://bharatgifting.com/slide2.jpeg" alt="First slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="https://bharatgifting.com/slide1.jpeg" alt="Second slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="https://bharatgifting.com/slide4.jpeg" alt="Third slide" />
+          </div>
+        </div>
+        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </div>
+    );
+  }
 }
 
-export default HeroSection
+export default HeroSection;
