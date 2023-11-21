@@ -6,48 +6,17 @@ function Footer() {
   const context = useContext(myContext);
   const { mode } = context;
   return (
-    <div>
-    <footer>
-    <div class="bg-white-800 py-4 text-black-400">
-      <div class="container px-4 mx-auto">
-        <div class="-mx-4 flex flex-wrap justify-between">
-          <div class="px-4 my-4 w-full sm:w-auto">
-            <div>
-              <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-pink-600">Quick Links</h2>
-            </div>
-            <ul class="leading-8">
-              <li><a href="/contact" class="">Contact Us</a></li>
-              <li><a href="/aboutus" class="">About Us</a></li>
-              <li><a href="#" class="">Dealer Location</a></li>
-              
-            </ul>
-          </div>
-          <div class="px-4 my-4 w-full sm:w-auto">
-            <div>
-              <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-pink-600">Help</h2>
-            </div>
-            <ul class="leading-8">
-              <li><a href="/help" >Help & Support</a></li>
-              <li><a href="./feedback" >Feedback</a></li>
-              <li><a href="./term-and-conditon" >Terms &amp; Conditions</a></li>
-              <li><a href="/privacy-policy" >Privacy Policy</a></li>
-              
-            </ul>
-          </div>
-          <div class="px-4 my-4 w-full sm:w-auto">
-            <div>
-              <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-pink-600">Policy</h2>
-            </div>
-            <ul class="leading-8">
-              <li><a href="./Shipping" >Shipping Policy</a></li>
-              <li><a href="./ReturnRefundPolicy" >Return & Refund Policy</a></li>
-            </ul>
-          </div>
-          <div class="px-4 my-4 w-full sm:w-auto xl:w-1/5">
-            <div>
-              <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-pink-600">Connect Us</h2>
-            </div>
-            <a
+
+        <section className="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
+    <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+            <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
+                <img className="w-auto h-9" src="https://bharatgifting.com/download.png" alt="" />
+
+                <p className="text-base leading-relaxed text-gray-600 mt-7">With this noble thought, 'Gifting Memories' was established in year 2009. With list zest, exuberance & dynamic brains we intend just not to serve clients but bringing them to a comfort zone by fulfilling their needs & desires. We aim to provide maximum customers satisfaction by providing top quality service.</p>
+
+                <ul className="flex items-center space-x-3 mt-9">
+                <a
       href="https://www.facebook.com/giftingmemoriesindia/"
       className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-blue-400 hover:border-blue-400"
     >
@@ -74,33 +43,80 @@ function Footer() {
                 <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
               </svg>
             </a>
-          </div>
+                </ul>
+            </div>
+
+            <div>
+                <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">Company</p>
+
+                <ul className="mt-6 space-y-4">
+                    <li>
+                        <a href="/aboutus" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> About us</a>
+                    </li>
+
+                    <li>
+                        <a href="/contact" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Contact us </a>
+                    </li>
+
+                    <li>
+                        <a href="/help" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Help & Support </a>
+                    </li>
+
+                    <li>
+                        <a href="/feedback" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Feedback </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">Policies</p>
+
+                <ul className="mt-6 space-y-4">
+                    <li>
+                        <a href="/term-and-conditon" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Terms & Conditions </a>
+                    </li>
+
+                    <li>
+                        <a href="/privacy-policy" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Privacy Policy </a>
+                    </li>
+
+                    <li>
+                        <a href="/Shipping" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Shipping Policy </a>
+                    </li>
+
+                    <li>
+                        <a href="/ReturnRefundPolicy" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Return & Refund Policy </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+                <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">Subscribe to newsletter</p>
+
+                <form action="#" method="POST" className="mt-6">
+                    <div>
+                        <label for="email" className="sr-only">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                    </div>
+<div className="ml-10 mt-10">
+<button type="submit" className="inline-flex items-center justify-center px-10 py-10 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
+
+</div>
+                </form>
+            </div>
         </div>
-      </div>
+
+        <hr className="mt-16 mb-10 border-gray-200" />
+
+        <p className="text-sm text-center text-gray-600">© Copyright 2021, All Rights Reserved by Gifting Memories |
+          
+          
+            Made with ❤️ by<a href="/devlopers"> Shubham & Chirayu.</a>
+          
+       </p>
     </div>
-    <div class="bg-white-700 py-4 text-gray-500">
-      <div class="container mx-auto px-4">
-        <div class="-mx-4 flex flex-wrap justify-between">
-          <div class="px-4 w-full text-center sm:w-auto sm:text-left ">
-            Copyright © 2023-
-            <script >new Date().getFullYear() > 2023 && document.write("- " + new Date().getFullYear())</script>
+</section>
 
-            Gifting Memories | All rights reserved.
-          </div>
-          <div class="px-4 w-full text-center sm:w-auto sm:text-left">
-            Made with ❤️ by <a href="https://github.com/shubhamsoni9139">Shubham</a>&<a href="https://github.com/chirayu2107">Chirayu.</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-
-
-
-
-    </div>
   )
 }
 
