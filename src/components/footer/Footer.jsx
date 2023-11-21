@@ -7,7 +7,7 @@ function Footer() {
   const { mode } = context;
   return (
     <div>
-      <footer>
+    <footer>
     <div class="bg-white-800 py-4 text-black-400">
       <div class="container px-4 mx-auto">
         <div class="-mx-4 flex flex-wrap justify-between">
@@ -94,6 +94,12 @@ function Footer() {
       </div>
     </div>
   </footer>
+
+
+
+
+
+
     </div>
   )
 }

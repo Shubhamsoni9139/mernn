@@ -80,72 +80,107 @@ export default function Cat() {
         <button className="slide left">&lt;</button>
         <div className="categories">
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 1" />
+            <img src="https://bharatgifting.com/badge.png" alt="Category 1" />
             <p>Promotional</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
+            <img src="https://bharatgifting.com/office.png" alt="Category 2" />
             <p>Office Essentials</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/keychain.png" alt="Category 2" />
+            <p>Keychains</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/pens.png " alt="Category 2" />
+            <p>Pens</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/pillows.png" alt="Category 2" />
+            <p>Personalized</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/clock.png " alt="Category 2" />
+            <p>Wall Clocks</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/diya.png " alt="Category 2" />
+            <p>Festive Gifting</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/health.png " alt="Category 2" />
+            <p>Health & Wellness</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/set.png " alt="Category 2" />
+            <p>Gift Sets</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/perfume.png" alt="Category 2" />
+            <p>Fragrance</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/tech.png" alt="Category 2" />
+            <p>Technology</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/green.png" alt="Category 2" />
+            <p>Green Giftings</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/trophy.png " alt="Category 2" />
+            <p>Recognition</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/apparels.png " alt="Category 2" />
+            <p>Apparels</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/handicrafts.png " alt="Category 2" />
+            <p>Handicrafts</p>
           </div>
           <div className="category">
-            <img src="https://bharatgifting.com/art.png" alt="Category 2" />
-            <p>Office Essentials</p>
+            <img src="https://bharatgifting.com/household.png" alt="Category 2" />
+            <p>Household</p>
           </div>
           <div className="category">
-            <img src="" alt="Category 2" />
-            <p>hello
+            <img src="https://bharatgifting.com/bag.png " alt="Category 2" />
+            <p>Bags
+            </p>
+          </div>
+          <div className="category">
+            <img src="https://bharatgifting.com/drink.png  " alt="Category 2" />
+            <p>Sippers
+            </p>
+          </div>
+          <div className="category">
+            <img src="https://bharatgifting.com/art.png  " alt="Category 2" />
+            <p>Art
+            </p>
+          </div>
+          <div className="category">
+            <img src="https://bharatgifting.com/brand.png" alt="Category 2" />
+            <p>Branded
+            </p>
+          </div>
+          <div className="category">
+            <img src="https://bharatgifting.com/diy.png " alt="Category 2" />
+            <p>DIY
+            </p>
+          </div>
+          <div className="category">
+            <img src="https://bharatgifting.com/sustainable.png " alt="Category 2" />
+            <p>Sustainable Gifting
+            </p>
+          </div>
+          <div className="category">
+            <img src="https://bharatgifting.com/beauty.png " alt="Category 2" />
+            <p>Beauty Care
+            </p>
+          </div>
+          <div className="category">
+            <img src="https://bharatgifting.com/choco.png " alt="Category 2" />
+            <p>Gourmet Gifts
             </p>
           </div>
 
