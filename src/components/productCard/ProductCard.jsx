@@ -6,6 +6,7 @@ import { toast } from 'react-toastify'
 
 function ProductCard() {
     const context = useContext(myContext)
+    
     const { mode, product ,searchkey, setSearchkey,filterType,setFilterType,
         filterPrice,setFilterPrice} = context
 

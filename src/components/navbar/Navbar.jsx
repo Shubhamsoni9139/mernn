@@ -11,6 +11,7 @@ function Navbar() {
   const context = useContext(myContext);
   const {mode, toggleMode} = context;
 
+
   const [open, setOpen] = useState(false)
 
   const user = JSON.parse(localStorage.getItem('user'));
