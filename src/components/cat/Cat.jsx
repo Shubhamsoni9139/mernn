@@ -1,8 +1,4 @@
-// Cat.jsx
-import React, { useEffect, useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import myContext from '../../context/data/myContext';
-
+import React, { useEffect } from "react";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "./styles.css";
 
@@ -35,31 +31,66 @@ const categoryData = [
 ];
 
 export default function Cat() {
-    const context = useContext(myContext);
-    const { setFilterType } = context;
-    const navigate = useNavigate();
+    useEffect(() => {
+        const categories = document.querySelector(".categories");
+        const categorySlider = document.querySelector(".category-slider");
+        const slideLeft = document.querySelector(".slide.left");
+        const slideRight = document.querySelector(".slide.right");
 
-    const handleCategoryClick = (category) => {
-        // Set the filterType to the selected category
-        setFilterType(category);
-        // Redirect to All Products page with the specified filter
-        navigate('/allproducts');
-    };
+        let scrollAmount = 0;
+        const scrollStep = 200; // Adjust this value to control how much the slider moves
 
-    return (
-        <nav>
-            <div className="category-slider">
-                <button className="slide left">&lt;</button>
-                <div className="categories">
-                    {categoryData.map((category, index) => (
-                        <div className="category" key={index} onClick={() => handleCategoryClick(category.name)}>
-                            <img src={category.imageUrl} alt={`Category ${index + 1}`} />
-                            <p>{category.name}</p>
-                        </div>
-                    ))}
-                </div>
-                <button className="slide right">&gt;</button>
+        // Move the slider to the left
+        const moveSliderLeft = () => {
+          scrollAmount -= scrollStep;
+          if (scrollAmount < 0) {
+            scrollAmount = 0;
+          }
+          categories.scrollTo({
+            top: 0,
+            left: scrollAmount,
+            behavior: "smooth",
+          });
+        };
+
+        // Move the slider to the right
+        const moveSliderRight = () => {
+          scrollAmount += scrollStep;
+          if (scrollAmount > categories.scrollWidth - categorySlider.offsetWidth) {
+            scrollAmount = categories.scrollWidth - categorySlider.offsetWidth;
+          }
+          categories.scrollTo({
+            top: 0,
+            left: scrollAmount,
+            behavior: "smooth",
+          });
+        };
+
+        // Add event listeners to the buttons
+        slideLeft.addEventListener("click", moveSliderLeft);
+        slideRight.addEventListener("click", moveSliderRight);
+
+        // Cleanup: Remove event listeners when the component unmounts
+        return () => {
+          slideLeft.removeEventListener("click", moveSliderLeft);
+          slideRight.removeEventListener("click", moveSliderRight);
+        };
+      }, []);
+
+  return (
+    <nav>
+      <div className="category-slider">
+        <button className="slide left">&lt;</button>
+        <div className="categories">
+          {categoryData.map((category, index) => (
+            <div className="category" key={index}>
+              <img src={category.imageUrl} alt={`Category ${index + 1}`} />
+              <p>{category.name}</p>
             </div>
-        </nav>
-    );
+          ))}
+        </div>
+        <button className="slide right">&gt;</button>
+      </div>
+    </nav>
+  );
 }
