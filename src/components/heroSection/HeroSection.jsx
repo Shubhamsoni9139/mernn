@@ -3,7 +3,7 @@ import React from 'react';
 class HeroSection extends React.Component {
   render() {
     return (
-      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel" style={{ backgroundColor: 'white' }}>
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img className="d-block w-100" src="https://bharatgifting.com/slide2.jpeg" alt="First slide" />

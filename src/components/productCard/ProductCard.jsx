@@ -32,6 +32,7 @@ function ProductCard() {
   }, [cartItems]);
 
   return (
+    <center>
     <section className="text-gray-600 body-font">
     <div className="px-5 py-8 md:py-16 mx-auto">
       <center>
@@ -108,7 +109,7 @@ function ProductCard() {
           ))}
       </div>
     </div>
-  </section>
+  </section></center>
   );
 }
 

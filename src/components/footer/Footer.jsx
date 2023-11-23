@@ -13,7 +13,7 @@ function Footer() {
             <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
                 <img className="w-auto h-9" src="https://bharatgifting.com/download.png" alt="" />
 
-                <p className="text-base leading-relaxed text-gray-600 mt-7">With this noble thought, 'Gifting Memories' was established in year 2009. With list zest, exuberance & dynamic brains we intend just not to serve clients but bringing them to a comfort zone by fulfilling their needs & desires. We aim to provide maximum customers satisfaction by providing top quality service.</p>
+                <p className="text-base leading-relaxed text-gray-600 mt-7">Welcome to Bharat Gifting, where corporate expressions meet elegance. As a premier B2B gifting partner, we redefine the art of gift-giving, enhancing business relationships with thoughtful and personalized solutions.</p>
 
                 <ul className="flex items-center space-x-3 mt-9">
                 <a
@@ -91,19 +91,29 @@ function Footer() {
             </div>
 
             <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
-                <p className="text-sm font-semibold tracking-widest text-black-400 ">Sign up and save</p>
-                <p className="text-sm text-gray-400 ">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+            <div class="mx-auto my-10 flex max-w-xs flex-col rounded-2xl border bg-white px-4 py-4 shadow-lg sm:max-w-lg sm:flex-row">
 
-                <form action="#" method="POST" className="mt-6">
-                    <div>
-                        <label for="email" className="sr-only">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
-                    </div>
-<div className="ml-0 mt-10">
-<button type="submit" className="inline-flex items-center justify-center px-5 py-10 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
-
+  <div class="py-2 px-7">
+    <center>
+    <p class="text-xl font-medium text-gray-800">Subscribe to get updates</p>
+    <p class="mb-4 text-gray-500">Never miss any updates</p>
+    <div class="flex">
+      <div class="mr-1 w-full">
+        <input type="email" class="placeholder:text-gray-400 h-12 w-full rounded-md ml-3 bg-gray-200 px-4 font-medium focus:outline-none focus:ring-1 focus:ring-blue-600" placeholder="Enter your email" />
+        <center><button class="shrink-0 flex h-12 w-full mt-3 ml-3 items-center justify-center rounded-lg bg-blue-600 text-white hover:bg-blue-700">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
+          <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+          <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+        </svg>
+        Subscribe
+      </button></center>
+      </div>
+      
+      
+    </div>
+    </center></div>
 </div>
-                </form>
+
             </div>
         </div>
 
