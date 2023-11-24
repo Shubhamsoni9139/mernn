@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Trending = () => {        
     return (
         <section className="py-12 bg-white sm:py-16 lg:py-20">
-    <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-md mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">Our featured items</h2>
             <p className="mt-4 text-base font-normal leading-7 text-gray-600">Our best of the best- explore our champion gifts that have been stealing the spotlight!</p>

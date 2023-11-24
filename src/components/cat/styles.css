@@ -114,6 +114,7 @@ nav {
     max-width: 2000px;
     padding:0px;
     margin:0px;
+    max-height: 150px;
 }
 
 .categories {
