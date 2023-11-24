@@ -14,7 +14,7 @@ function Testimonial() {
             </div>
   
             <div className="mt-8 text-center md:mt-16 md:order-3">
-              <a href="https://www.google.com/search?q=www.giftingmemories&rlz=1C1OPNX_enIN1042IN1042&oq=www.giftingmemories&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg80gEHMzI3ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8#" title="" className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"> Check all 2,157 reviews </a>
+              <a href="https://www.google.com/maps/place/Gifting+Memories/@26.914244,75.7960603,15z/data=!4m16!1m9!3m8!1s0x396db4061a9bde11:0xeac94301dad334c7!2sGifting+Memories!8m2!3d26.914244!4d75.7960603!9m1!1b1!16s%2Fg%2F1tqnk04d!3m5!1s0x396db4061a9bde11:0xeac94301dad334c7!8m2!3d26.914244!4d75.7960603!16s%2Fg%2F1tqnk04d?entry=ttu"> Check all 2,157 reviews </a>
             </div>
   
             <div className="relative mt-10 md:mt-24 md:order-2">
