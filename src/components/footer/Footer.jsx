@@ -89,10 +89,10 @@ function Footer() {
                     </li>
                 </ul>
             </div>
+            
 
-            <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
-            <div class="mx-auto my-10 flex max-w-xs flex-col rounded-2xl border bg-white px-4 py-4 shadow-lg sm:max-w-lg sm:flex-row">
-
+  <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+  <div class="mx-auto my-10 flex max-w-xs flex-col rounded-2xl border bg-white px-4 py-4 shadow-lg sm:max-w-lg sm:flex-row">
   <div class="py-2 px-7">
     <center>
     <p class="text-xl font-medium text-gray-800">Subscribe to get updates</p>

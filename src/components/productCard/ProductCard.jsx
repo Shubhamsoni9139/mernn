@@ -48,17 +48,17 @@ function ProductCard() {
           .filter((obj) => obj.price.includes(filterPrice))
           .slice(0, 8)
           .map((item) => (
-            <div className="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md" key={item.id}>
+            <div className="relative m-10 w-50 h-50 max-w-xs overflow-hidden rounded-lg bg-white shadow-md" key={item.id}>
               <div onClick={() => (window.location.href = `/productinfo/${item.id}`)} className="flex justify-center cursor-pointer">
                 <img className="h-60 rounded-t-lg object-cover" src={item.imageUrl} alt="product image" />
               </div>
               <span className="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">
                 Sale
               </span>
-              <div className="mt-4 px-5 pb-5">
-                <a href="#">
+              <div className="mt-2 px-2 pb-2 h-25">
+               
                   <h5 className="text-xl font-semibold tracking-tight text-slate-900">{item.title}</h5>
-                </a>
+               
                 <div className="mt-2.5 mb-5 flex items-center">
                   <span className="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">3</span>
                   {[...Array(4)].map((_, index) => (
@@ -82,27 +82,7 @@ function ProductCard() {
                     <span className="text-sm text-slate-900 line-through">₹{item.price * 1.2}</span>
                   </p>
 
-                  <div className="flex justify-center">
-                    <button
-                      type="button"
-                      onClick={() => addCart(item)}
-                      className="block bg-white rounded-full text-black-800 text-xs font-bold px-3 py-2 leading-none flex-items-center"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="mr-2 h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                      >
-                        <path
-                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                        />
-                      </svg>
-                     
-                    </button>
-                  </div>
+                  
                 </div>
               </div>
             </div>

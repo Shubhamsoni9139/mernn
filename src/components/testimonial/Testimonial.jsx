@@ -9,12 +9,13 @@ function Testimonial() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-col items-center">
             <div className="text-center">
-              <p className="text-lg font-medium text-gray-600 font-pj">2,157 people have said how good Gifting-Memories</p>
+              <p className="text-lg font-medium text-gray-600 font-pj"> people have said how good Gifting-Memories</p>
               <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Our happy clients say about us</h2>
             </div>
   
             <div className="mt-8 text-center md:mt-16 md:order-3">
-              <a href="https://www.google.com/maps/place/Gifting+Memories/@26.914244,75.7960603,15z/data=!4m16!1m9!3m8!1s0x396db4061a9bde11:0xeac94301dad334c7!2sGifting+Memories!8m2!3d26.914244!4d75.7960603!9m1!1b1!16s%2Fg%2F1tqnk04d!3m5!1s0x396db4061a9bde11:0xeac94301dad334c7!8m2!3d26.914244!4d75.7960603!16s%2Fg%2F1tqnk04d?entry=ttu"> Check all 2,157 reviews </a>
+              <a href="https://maps.app.goo.gl/KmWQZqkduY6Y8ELy5" title="" className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"> Check all reviews  | </a>
+              <a href="https://g.page/r/Ccc009oBQ8nqEB0/review" title="" className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"> Write a review </a>
             </div>
   
             <div className="relative mt-10 md:mt-24 md:order-2">
@@ -38,9 +39,7 @@ function Testimonial() {
                       <blockquote className="flex-1 mt-8">
                         <p className="text-lg leading-relaxed text-gray-900 font-pj">“I recently bought customized t-shirts, bottles, and bags from Gifting Memories (Mr Aatish ji) for our Foundation Day celebration, and they were a massive hit with our employees.
 
-The quality was outstanding, customization spot-on, and delivery was on time. Our team loved the personal touch, and it added an extra layer of excitement to our event.
-
-I highly recommend Gifting Memories for top-notch, customized gifts. They made our Foundation Day memorable!
+The quality was outstanding, customization spot-on, and delivery was on time. 
 
 Best Regards.
 
