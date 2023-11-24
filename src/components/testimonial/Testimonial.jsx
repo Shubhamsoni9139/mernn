@@ -14,7 +14,7 @@ function Testimonial() {
             </div>
   
             <div className="mt-8 text-center md:mt-16 md:order-3">
-              <a href="#" title="" className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"> Check all 2,157 reviews </a>
+              <a href="https://www.google.com/search?q=www.giftingmemories&rlz=1C1OPNX_enIN1042IN1042&oq=www.giftingmemories&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg80gEHMzI3ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8#" title="" className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"> Check all 2,157 reviews </a>
             </div>
   
             <div className="relative mt-10 md:mt-24 md:order-2">
@@ -36,15 +36,24 @@ function Testimonial() {
                       </div>
   
                       <blockquote className="flex-1 mt-8">
-                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”</p>
+                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“I recently bought customized t-shirts, bottles, and bags from Gifting Memories (Mr Aatish ji) for our Foundation Day celebration, and they were a massive hit with our employees.
+
+The quality was outstanding, customization spot-on, and delivery was on time. Our team loved the personal touch, and it added an extra layer of excitement to our event.
+
+I highly recommend Gifting Memories for top-notch, customized gifts. They made our Foundation Day memorable!
+
+Best Regards.
+
+
+”</p>
                       </blockquote>
                     </div>
   
                     <div className="flex items-center mt-8">
-                      <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png" alt="" />
+                      <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://lh3.googleusercontent.com/a/ACg8ocIoJloHyObijx9Dw-7ri0ipHgnbKv7MKXtSVS_4UYsL=w90-h90-p-rp-mo-br100" alt="" />
                       <div className="ml-4">
-                        <p className="text-base font-bold text-gray-900 font-pj">Leslie Alexander</p>
-                        <p className="mt-0.5 text-sm font-pj text-gray-600">Freelance React Developer</p>
+                        <p className="text-base font-bold text-gray-900 font-pj">Mayank Jain,</p>
+                        <p className="mt-0.5 text-sm font-pj text-gray-600">CEO, NLET Initiatives LLP.</p>
                       </div>
                     </div>
                   </div>
@@ -63,15 +72,15 @@ function Testimonial() {
                       </div>
   
                       <blockquote className="flex-1 mt-8">
-                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.”</p>
+                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“super excellent quality product we receivefrom you timely delivery , very well behaved staff , quick response keep it up high thanks Atish Sir to give such amazing quality products to Ekam Yoga Thanks again.”</p>
                       </blockquote>
                     </div>
   
                     <div className="flex items-center mt-8">
                       <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png" alt="" />
                       <div className="ml-4">
-                        <p className="text-base font-bold text-gray-900 font-pj">Jane Cooper</p>
-                        <p className="mt-0.5 text-sm font-pj text-gray-600">UX Designer</p>
+                        <p className="text-base font-bold text-gray-900 font-pj">Sarit Singh</p>
+                        <p className="mt-0.5 text-sm font-pj text-gray-600">Ekam Yoga</p>
                       </div>
                     </div>
                   </div>
@@ -90,15 +99,15 @@ function Testimonial() {
                       </div>
   
                       <blockquote className="flex-1 mt-8">
-                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“The service was excellent. Absolutely wonderful! Keep up the excellent work. I could probably go into sales for you.”</p>
+                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“A wonderful experience with quick service and gift item are reasonable and the best quality. Recommended to take any gifting item from Gifting Memories.”</p>
                       </blockquote>
                     </div>
   
                     <div className="flex items-center mt-8">
-                      <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png" alt="" />
+                      <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://lh3.googleusercontent.com/a-/ALV-UjVlDEtipcKMINk48QwkR4bgKUDQkgAeaQdFL-JbYIuAHEUa=w90-h90-p-rp-mo-br100" alt="" />
                       <div className="ml-4">
-                        <p className="text-base font-bold text-gray-900 font-pj">Mildred Edwards</p>
-                        <p className="mt-0.5 text-sm font-pj text-gray-600">Marketing Specialist</p>
+                        <p className="text-base font-bold text-gray-900 font-pj">neha Luharuwalla</p>
+                        <p className="mt-0.5 text-sm font-pj text-gray-600"></p>
                       </div>
                     </div>
                   </div>
