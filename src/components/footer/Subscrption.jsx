@@ -51,7 +51,7 @@ function Subscription() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             name='email'
-            className='bg-white-600 mb-4 px-2 py-2 w-full rounded-lg text-white placeholder:text-gray-200 outline-none'
+            className='bg-white-600 mb-4 px-2 py-2 w-full rounded-lg text-black placeholder:text-gray-200 outline-none'
             placeholder='Enter your email'
           />
         </div>

@@ -14,7 +14,7 @@ function Testimonial() {
             </div>
   
             <div className="mt-8 text-center md:mt-16 md:order-3">
-              <a href="https://maps.app.goo.gl/KmWQZqkduY6Y8ELy5" title="" className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"> Check all reviews  | </a>
+              <a href="https://maps.app.goo.gl/KmWQZqkduY6Y8ELy5" title="" className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"> Read all reviews  | </a>
               <a href="https://g.page/r/Ccc009oBQ8nqEB0/review" title="" className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"> Write a review </a>
             </div>
   
