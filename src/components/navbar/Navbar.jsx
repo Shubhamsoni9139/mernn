@@ -64,28 +64,28 @@ function Navbar() {
                 </div>
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   
-                  <Link to={'/allproducts'} className="text-sm font-medium text-gray-900 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                  <Link to={'/allproducts'} className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600 " style={{ color: mode === 'dark' ? 'white' : '', }}>
                     All Products
                   </Link>
 
                   {user ? <div className="flow-root">
-                    <Link to={'/order'} style={{ color: mode === 'dark' ? 'white' : '', }} className="-m-2 block p-2 font-medium text-gray-900">
+                    <Link to={'/order'} style={{ color: mode === 'dark' ? 'white' : '', }} className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600">
                       Order
                     </Link>
                   </div> : ""}
 
                   {user?.user?.email === "ss4185667@gmail.com" ? <div className="flow-root">
-                    <Link to={'/dashboard'} className="-m-2 block p-2 font-medium text-gray-900" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                    <Link to={'/dashboard'} className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>
                       admin
                     </Link>
                   </div> : ""}
 
                 {user ? <div className="flow-root">
-                    <a onClick={logout} className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                    <a onClick={logout} className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>
                       Logout
                     </a>
                   </div> : <div className="flow-root">
-                    <Link to={'/signup'}  className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                    <Link to={'/signup'}  className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>
                       Signup
                     </Link>
                   </div>}
@@ -105,7 +105,7 @@ function Navbar() {
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
-                    <span className="ml-3 block text-base font-medium text-gray-900" style={{ color: mode === 'dark' ? 'white' : '', }}>INDIA</span>
+                    <span className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>INDIA</span>
                     <span className="sr-only">, change currency</span>
                   </a>
                 </div>
@@ -145,22 +145,22 @@ function Navbar() {
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
 
-                  <Link to={'/allproducts'} className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                  <Link to={'/allproducts'} className=" text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>
                     All Products
                   </Link>
-                 {user ?  <Link to={'/order'} className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                 {user ?  <Link to={'/order'} className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>
                     Order
-                  </Link> :   <Link to={'/signup'}  className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                  </Link> :   <Link to={'/signup'}  className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>
                       Signup
                     </Link>}
 
                   {user?.user?.email === 'ss4185667@gmail.com' ? 
-                   <Link to={'/dashboard'} className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                   <Link to={'/dashboard'} className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>
                     Admin
                   </Link> : ""}
                   
                 
-                 {user ?  <a onClick={logout} className="text-sm font-medium text-gray-700 cursor-pointer  " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                 {user ?  <a onClick={logout} className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>
                     Logout
                   </a> : ""}
                 </div>
@@ -172,7 +172,7 @@ function Navbar() {
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
-                    <span className="ml-3 block text-sm font-medium" style={{ color: mode === 'dark' ? 'white' : '', }}>INDIA</span>
+                    <span className="text-base font-bold leading-7 text-gray-900 transition-all duration-200  border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600" style={{ color: mode === 'dark' ? 'white' : '', }}>INDIA</span>
                   </a>
                 </div>
 
