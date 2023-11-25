@@ -137,7 +137,7 @@ function Navbar() {
               <div className="ml-4 flex lg:ml-0">
                 <Link to={'/'} className='flex'>
                   <div className="flex ">
-                    <h3 className=' text-2xl font-bold text-black   py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}><img class="h-6 w-15 sm:h-5 w-115 mx-5 " src='https://bharatgifting.com/download.png'></img></h3>
+                    <h3 className=' text-2xl font-bold text-black  px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}><img class="h-6 w-15 sm:h-5 w-115 mx-5 " src='https://bharatgifting.com/download.png'></img></h3>
                   </div>
                 </Link>
               </div>
@@ -154,7 +154,7 @@ function Navbar() {
                       Signup
                     </Link>}
 
-                  {user?.user?.email === 'admin@gmail.com'? 
+                  {user?.user?.email === 'ss4185667@gmail.com' ? 
                    <Link to={'/dashboard'} className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
                     Admin
                   </Link> : ""}
