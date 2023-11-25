@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import { Timestamp } from 'firebase/firestore';
 const firebaseConfig = {
   apiKey: "AIzaSyAntNpkO42eaPAP1Mr0qKFzy2c6_H8Cw_U",
   authDomain: "bharat-gifting-20870.firebaseapp.com",
@@ -16,3 +17,4 @@ const app = initializeApp(firebaseConfig);
 const fireDB = getFirestore(app);
 const auth = getAuth(app)
 export {fireDB,auth } ;
+export {Timestamp };
