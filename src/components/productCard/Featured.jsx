@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../redux/cartSlice';
 import { toast } from 'react-toastify';
 
-function ProductCard() {
+function Featured() {
   const context = useContext(myContext);
 
   const {
@@ -48,7 +48,7 @@ function ProductCard() {
     .filter((obj) => obj.title.toLowerCase().includes(searchkey))
     .filter((obj) => obj.category.toLowerCase().includes(filterType))
     .filter((obj) => obj.price.includes(filterPrice))
-    .slice(0, 3000)
+    .slice(0, 5)
     .map((item) => (
       <div className="relative group w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4" key={item.id}>
         <div onClick={() => (window.location.href = `/productinfo/${item.id}`)} className="overflow-hidden aspect-w-1 aspect-h-1">
@@ -93,4 +93,4 @@ function ProductCard() {
   );
 }
 
-export default ProductCard;
+export default Featured;

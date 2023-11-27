@@ -8,6 +8,7 @@ import Track from '../../components/track/Track'
 import Testimonial from '../../components/testimonial/Testimonial'
 import Cat from '../../components/cat/Cat'
 import Trending from '../../components/Trending/trending'
+import Featured from '../../components/productCard/Featured'
 import { Link } from 'react-router-dom'
 
 
@@ -16,7 +17,7 @@ function Home() {
     <Layout>
       <Cat />
       <HeroSection />
-      <ProductCard />
+      <Featured/>
       <div className="flex justify-center -mt-10 mb-4">
         <Link to={'/allproducts'}>
           <button className=' bg-gray-300 px-5 py-2 rounded-xl'>See more</button>
