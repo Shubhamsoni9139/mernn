@@ -15,6 +15,18 @@ const Devlopers = () => {
                     <div>
                        
                     </div>
+                    <div>
+                    <a href="https://github.com/shubhamsoni9139"><img className="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter" src="https://avatars.githubusercontent.com/u/98644324?v=4https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-2.png" alt="" /></a>
+                        <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Shubham Soni</p>
+                        <p className="mt-2 text-base font-normal text-gray-600 font-pj">Full Stack Developer</p>
+                    </div>
+        
+                    <div>
+                        <a href="https://github.com/chirayu2107"><img  className="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter " src="https://avatars.githubusercontent.com/u/144110269?s=400&u=ce3c486edf5373964112c062eb89342202868e95&v=4" alt="" /></a>
+                        <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Chirayu Maru</p>
+                        <p className="mt-2 text-base font-normal text-gray-600 font-pj">Full Stack Developer</p>
+                    </div>
+        
                     
         
                     <div>
