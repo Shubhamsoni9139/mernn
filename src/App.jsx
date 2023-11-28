@@ -31,6 +31,7 @@ import PrivacyPolicy from './components/AllPolicy/privacy';
 import Feedback from './components/Feedback/Feed';
 import ReturnRefundPolicy from './components/AllPolicy/ReturnRefundPolicy';
 import Devlopers from './components/Devlopers/Devlopers';
+import Allcatproducts from './pages/allproducts/Allcatproducts';
 function App() {
   return (
     <MyState>
@@ -47,6 +48,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/ReturnRefundPolicy" element={<ReturnRefundPolicy />} />
           <Route path="/devlopers" element={<Devlopers/>} />
+          <Route path="/products" element={<Allcatproducts/>} />
 
 
           <Route path="/order" element={
