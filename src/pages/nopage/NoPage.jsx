@@ -8,7 +8,7 @@ function NoPage() {
       alignItems: 'center',
       justifyContent: 'center',
       minHeight: '100vh',
-      background: `url('https://wpklik.com/wp-content/uploads/2019/03/A-404-Page-Best-Practices-and-Design-Inspiration.jpg') center/cover no-repeat`,
+      background: `url('https://static.vecteezy.com/system/resources/previews/008/255/803/large_2x/page-not-found-error-404-system-updates-uploading-computing-operation-installation-programs-system-maintenance-a-hand-drawn-layout-template-of-a-broken-robot-illustration-vector.jpg') center/cover no-repeat`,
       color: '#fff', // Text color
       textAlign: 'center',
     },
