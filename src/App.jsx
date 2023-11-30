@@ -32,6 +32,7 @@ import Feedback from './components/Feedback/Feed';
 import ReturnRefundPolicy from './components/AllPolicy/ReturnRefundPolicy';
 import Devlopers from './components/Devlopers/Devlopers';
 import Allcatproducts from './pages/allproducts/Allcatproducts';
+import AddCoupon from './pages/admin/page/AddCoupon';
 function App() {
   return (
     <MyState>
@@ -73,6 +74,11 @@ function App() {
           <Route path='/updateproduct' element={
             <ProtectedRouteForAdmin>
               <UpdateProduct/>
+            </ProtectedRouteForAdmin>
+          } />
+           <Route path='/addcoupon' element={
+            <ProtectedRouteForAdmin>
+             <AddCoupon/>
             </ProtectedRouteForAdmin>
           } />
           <Route path="/*" element={<NoPage />} />

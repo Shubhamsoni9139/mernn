@@ -10,10 +10,10 @@ import { addDoc, collection } from 'firebase/firestore';
 import { fireDB } from '../../fireabase/FirebaseConfig';
 import Navbar from '../../components/navbar/Navbar';
 
+
 function Cart() {
   const context = useContext(myContext);
-  const { mode } = context;
-
+  const { mode,  coupon } = context;
   const dispatch = useDispatch();
 
   const cartItems = useSelector((state) => state.cart);
@@ -71,6 +71,34 @@ function Cart() {
   const shipping = parseInt(100);
 
   const grandTotal = shipping + totalAmount;
+  
+  /**========================================================================
+   *!                           coupon code
+   *========================================================================**/
+   const [enteredCoupon, setEnteredCoupon] = useState('');
+   const [appliedDiscount, setAppliedDiscount] = useState(0);
+ 
+   const applyCoupon = async () => {
+     try {
+       const couponDoc = coupon.find((c) => c.title === enteredCoupon);
+       if (couponDoc) {
+         const discountPercentage = couponDoc.percentage || 0;
+         setAppliedDiscount(discountPercentage);
+         toast.success(`Coupon "${enteredCoupon}" applied successfully`);
+       } else {
+         toast.error(`Coupon "${enteredCoupon}" not found`);
+       }
+     } catch (error) {
+       console.error('Error applying coupon:', error);
+     }
+   };
+ 
+   const grandTotalWithDiscount = grandTotal - (grandTotal * appliedDiscount) / 100;
+
+     
+
+
+
 
   /**========================================================================
    *!                           Payment Integration
@@ -110,7 +138,7 @@ function Cart() {
     var options = {
       key: 'rzp_test_AoHQOjq1O7UDhz',
       key_secret: 'p548KZ9pYrRAEsRSUymNEcP0',
-      amount: parseInt(grandTotal * 100),
+      amount: parseInt(grandTotalWithDiscount * 100),
       currency: 'INR',
       order_receipt: 'order_rcptid_' + name,
       name: 'Bharat-gifting',
@@ -225,7 +253,7 @@ function Cart() {
                 Subtotal
               </p>
               <p className="text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
-                ₹{totalAmount}
+                ₹{grandTotalWithDiscount}
               </p>
             </div>
             <div className="flex justify-between">
@@ -238,21 +266,42 @@ function Cart() {
             </div>
             <hr className="my-4" />
             <div className="flex justify-between mb-3">
-              <p className="text-lg font-bold" style={{ color: mode === 'dark' ? 'white' : '' }}>
-                Total
-              </p>
-              <div className>
-                <p className="mb-1 text-lg font-bold" style={{ color: mode === 'dark' ? 'white' : '' }}>
-                  ₹{grandTotal}
-                </p>
-              </div>
-            </div>
+        <input
+          type="text"
+          placeholder="Enter Coupon Code"
+          value={enteredCoupon}
+          onChange={(e) => setEnteredCoupon(e.target.value)}
+          className="border rounded-md py-2 px-4 mr-2"
+        />
+        
+      </div>
+      <button onClick={applyCoupon} className="border rounded-md py-2 px-4 p-10 ml-3">
+          Apply Coupon
+        </button>
+      <p className="text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+        Applied Discount
+      </p>
+      <p className="text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+        - ₹{(grandTotal * appliedDiscount) / 100}
+      </p>
+
+      <p className="text-lg font-bold" style={{ color: mode === 'dark' ? 'white' : '' }}>
+        Updated Total
+      </p>
+      <div className>
+        <p className="mb-1 text-lg font-bold" style={{ color: mode === 'dark' ? 'white' : '' }}>
+          ₹{grandTotalWithDiscount}
+        </p>
+      </div>
+
+
             <div className="flex justify-between mb-3">
             <button onClick={() => deleteCart()} className="border rounded-md py-2 px-4 text-black-500">
   Delete Cart
 </button>
 
             </div>
+
             <Modal
               name={name}
               address={address}

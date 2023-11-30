@@ -134,6 +134,89 @@ function myState(props) {
             setLoading(false)
         }
     }
+    
+const [coupons, setCoupons] = useState({
+    title: null,
+    percentage: null,
+    
+});
+
+const addCoupon = async () => {
+    if (coupons.title == null || coupons.percentage == null ) {
+        return toast.error("all fields are required")
+    }
+
+    setLoading(true)
+
+    try {
+        const couponRef = collection(fireDB, 'coupons');
+        await addDoc(couponRef, coupons)
+        toast.success("Add coupon successfully");
+        setTimeout(() => {
+            window.location.href = '/dashboard'
+        }, 800);
+        getCouponData();
+        setLoading(false)
+    } catch (error) {
+        console.log(error);
+        setLoading(false)
+    }
+    // setProducts("")
+
+
+}
+
+const [coupon, setCoupon] = useState([]);
+
+const getCouponData = async () => {
+
+    setLoading(true)
+
+    try {
+        const q = query(
+            collection(fireDB, 'coupons')
+        );
+
+        const data = onSnapshot(q, (QuerySnapshot) => {
+            let couponArray = [];
+            QuerySnapshot.forEach((doc) => {
+                couponArray.push({ ...doc.data(), id: doc.id });
+            });
+            setCoupon(couponArray);
+            setLoading(false)
+        });
+
+        return () => data;
+
+    } catch (error) {
+        console.log(error)
+        setLoading(false)
+    }
+
+}
+
+useEffect(() => {
+    getCouponData();
+}, []);
+
+
+
+
+// delete product
+
+const deleteCoupon = async (item) => {
+    setLoading(true)
+    try {
+        await deleteDoc(doc(fireDB, 'coupons', item.id))
+        toast.success('Product Deleted successfully')
+        getCouponData();
+        setLoading(false)
+    } catch (error) {
+        console.log(error)
+        setLoading(false)
+    }
+}
+
 
 
     const [order, setOrder] = useState([]);
@@ -191,7 +274,7 @@ function myState(props) {
             products, setProducts, addProduct, product,
             edithandle, updateProduct, deleteProduct, order,
             user, searchkey, setSearchkey,filterType,setFilterType,
-            filterPrice,setFilterPrice
+            filterPrice,setFilterPrice, coupons, setCoupons, addCoupon, coupon,deleteCoupon
         }}>
             {props.children}
         </MyContext.Provider>
