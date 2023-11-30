@@ -137,7 +137,7 @@ function Navbar() {
               <div className="ml-4 flex lg:ml-0">
                 <Link to={'/'} className='flex'>
                   <div className="flex ">
-                    <h3 className=' text-2xl font-bold text-black  px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}><img class="h-15 w-20 sm:h-15 w-20 mx-5 " src='https://res.cloudinary.com/dt8emxboh/image/upload/v1701076593/hhwyldfpkg6cz20zk4ap.png'></img></h3>
+                    <h3 className=' text-2xl font-bold text-black  px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}><img class="h-15 w-20 sm:h-15 w-20 mx-5 " src='https://res.cloudinary.com/dt8emxboh/image/upload/v1701267143/kpxmttc2sbhyhxwcurx4.jpg'></img></h3>
                   </div>
                 </Link>
               </div>

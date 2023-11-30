@@ -12,7 +12,7 @@ function Footer() {
     <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
             <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                <img className="w-auto h-9" src="http://res.cloudinary.com/dt8emxboh/image/upload/v1701076593/hhwyldfpkg6cz20zk4ap.png" alt="" />
+                <img className="w-auto h-9" src="https://res.cloudinary.com/dt8emxboh/image/upload/v1701267143/kpxmttc2sbhyhxwcurx4.jpg" alt="" />
 
                 <p className="text-base leading-relaxed text-gray-600 mt-7">Welcome to Bharat Gifting, where corporate expressions meet elegance. As a premier B2B gifting partner, we redefine the art of gift-giving, enhancing business relationships with thoughtful and personalized solutions.</p>
 
