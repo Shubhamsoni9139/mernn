@@ -93,6 +93,28 @@ function Footer() {
             <div>
               <Subscrption/>
             </div>
+            <div>
+            <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">Payment methods</p>
+            <ul className="flex items-center  mt-6 ">
+                    <li>
+                        <img className="h-7 w-10" src='https://res.cloudinary.com/dt8emxboh/image/upload/v1701456473/sxdopft10blvgynz3eus.png'></img>
+                       
+                    </li>
+
+                    <li>
+                    <img className="h-5 w-11" src='https://res.cloudinary.com/dt8emxboh/image/upload/v1701106651/h51clt9l55brxiyce49m.png'></img>
+                    </li>
+
+                    <li>
+                    <img className="h-8 w-11" src='https://res.cloudinary.com/dt8emxboh/image/upload/v1701106608/rdt4xq0wpjhfp46ntxcb.png'></img>
+                    </li>
+
+                    <li>
+                    <img className="h-5 w-10" src='https://res.cloudinary.com/dt8emxboh/image/upload/v1701106601/l1v6nj7ruoq9knmxbdbt.png'></img>
+                    </li>
+                </ul>
+            </div>
+
   
         </div>
        

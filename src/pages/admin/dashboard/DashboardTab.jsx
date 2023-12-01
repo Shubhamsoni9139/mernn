@@ -275,27 +275,45 @@ function DashboardTab() {
                                             <th scope="col" className="px-6 py-3">
                                                 Uid
                                             </th>
+                                            <th scope="col" className="px-6 py-3">
+                                                phone no
+                                            </th>
+                                            <th scope="col" className="px-6 py-3">
+                                                GST NO
+                                            </th>
+                                            <th scope="col" className="px-6 py-3">
+                                                Ref . code
+                                            </th>
                                            
                                         </tr>
                                     </thead>
                                    {user.map((item,index)=>{
-                                    const {name,uid,email,
+                                    const {firstName,uid,email,mobileNo,gstin,referralCode
                                         // date
                                     } = item;
                                     return(
                                         <tbody key={index}>
-                                        <tr className="bg-gray-50 border-b  dark:border-gray-700" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
+                                       <tr className="bg-gray-50 border-b  dark:border-gray-700" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                {index + 1}.
                                             </td>
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
-                                                {name}
+                                                {firstName}
                                             </td>
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                 {email}
                                             </td>
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                 {uid}
+                                            </td>
+                                            <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                                { mobileNo}
+                                            </td>
+                                            <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                                {gstin}
+                                            </td>
+                                            <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                                {referralCode}
                                             </td>
 
                                         </tr>

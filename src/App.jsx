@@ -33,6 +33,7 @@ import ReturnRefundPolicy from './components/AllPolicy/ReturnRefundPolicy';
 import Devlopers from './components/Devlopers/Devlopers';
 import Allcatproducts from './pages/allproducts/Allcatproducts';
 import AddCoupon from './pages/admin/page/AddCoupon';
+import DealerSignup from './pages/registration/dealersignup';
 function App() {
   return (
     <MyState>
@@ -65,6 +66,7 @@ function App() {
           } />
           <Route path='/login' element={<Login/>} />
           <Route path='/signup' element={<Signup/>} />
+          <Route path='/dealerSignup' element={<DealerSignup/>} />
           <Route path='/productinfo/:id' element={<ProductInfo/>} />
           <Route path='/addproduct' element={
             <ProtectedRouteForAdmin>

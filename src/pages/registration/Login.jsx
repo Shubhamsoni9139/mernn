@@ -43,16 +43,16 @@ function Login() {
     return (
         <div className=' flex justify-center items-center h-screen'>
             {loading && <Loader/>}
-            <div className=' bg-gray-800 px-10 py-10 rounded-xl '>
+            <div className=' bg-white p-6 shadow-xl lg:p-10 border border-gray-100 px-10 py-10 rounded-xl'>
                 <div className="">
-                    <h1 className='text-center text-white text-xl mb-4 font-bold'>Login</h1>
+                    <h1 className='text-center text-black-600 text-xl mb-4 font-bold'>Login</h1>
                 </div>
                 <div>
                     <input type="email"
                     value={email}
                     onChange={(e)=> setEmail(e.target.value)}
                         name='email'
-                        className=' bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none'
+                        className=' bg-gray-100 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-gray-600 placeholder:text-gray-600 outline-none'
                         placeholder='Email'
                     />
                 </div>
@@ -61,19 +61,19 @@ function Login() {
                         type="password"
                         value={password}
                         onChange={(e)=> setPassword(e.target.value)}
-                        className=' bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none'
+                        className=' bg-gray-100 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-gray-600 placeholder:text-gray-600 outline-none'
                         placeholder='Password'
                     />
                 </div>
                 <div className=' flex justify-center mb-3'>
                     <button
                     onClick={login}
-                        className=' bg-yellow-500 w-full text-black font-bold  px-2 py-2 rounded-lg'>
+                        className=' bg-blue-600 w-full text-white font-bold  px-2 py-2 rounded-lg'>
                         Login
                     </button>
                 </div>
                 <div>
-                    <h2 className='text-white'>Don't have an account <Link className=' text-yellow-500 font-bold' to={'/signup'}>Signup</Link></h2>
+                    <h2 className='text-gray-600'>Don't have an account <Link className=' text-blue-600 font-bold' to={'/signup'}>Signup</Link></h2>
                 </div>
             </div>
         </div>
