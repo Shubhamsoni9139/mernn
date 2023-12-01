@@ -40,7 +40,7 @@ h2 {
 
 .search-input {
     padding: 8px;
-    border: solid #e53338;
+    border: solid #fb0404;
     border-radius: 20px 20px 20px 20px;
     align-items: center;
     margin-left: 450px;
@@ -51,7 +51,7 @@ h2 {
 }
 
 .search-button {
-    background-color:#e53338;
+    background-color:#fb0404;
     color: white;
     border: none;
     border-radius: 20px 20px 20px 20px;
@@ -69,7 +69,7 @@ h2 {
 .action-buttons {
     display: flex;
     align-items: center;
-    color:#e53338;
+    color:#fb0404;
 }
 
 .logo {
@@ -88,12 +88,12 @@ h2 {
 .action-buttons {
     display: flex;
     align-items: center;
-    color:#e53338;
+    color:#fb0404;
 }
 
 .action-button img {
     top: 13px;
-    color: #e53338;
+    color: #fb0404;
     height: 20px; /* Adjust the height as needed */
     margin-inline: 7px; /* Adjust the spacing between icons */
     margin-right: 30px;
@@ -121,7 +121,7 @@ nav {
     display: inline-flex;
     flex-wrap:nowrap;
     overflow-x: hidden;
-    /*border:#e53338 1px solid ; /* Add border style */
+    /*border:#fb0404 1px solid ; /* Add border style */
     padding: 10px 150px 0px 0px; /* Add padding inside the border */
     margin: 90px 0px; /* Add margins from top and bottom */
     border-radius: 20px 20px 20px 20px;
@@ -152,7 +152,7 @@ nav {
 }
 
 .slide {
-    background:#e53338;
+    background:#fb0404;
     color: white;
     border: none;
     font-size: 15px;
@@ -461,7 +461,7 @@ nav {
     margin-left: 140px;
     font-family: sans-serif;
     font-size: large;
-    color: #e53338;
+    color: #fb0404;
 }
 
 .left-side {
@@ -535,7 +535,7 @@ textarea {
 
 button[type="submit"] {
     background-color: #007BFF;
-    color: #e53338;
+    color: #fb0404;
     padding: 10px;
     border: none;
     border-radius: 20px 20px 20px 20px;
