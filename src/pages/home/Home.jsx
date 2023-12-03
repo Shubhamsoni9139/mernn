@@ -10,10 +10,12 @@ import Cat from '../../components/cat/Cat'
 import Trending from '../../components/Trending/trending'
 import Featured from '../../components/productCard/Featured'
 import { Link } from 'react-router-dom'
+import WhatsAppButton from '../../components/Whatsapp/Whatsapp'
 
 
 function Home() {
   return (
+    <>
     <Layout>
       <Cat />
       <HeroSection />
@@ -28,6 +30,8 @@ function Home() {
       <Track />
       <Testimonial />
     </Layout>
+    <WhatsAppButton/>
+    </>
   )
 }
 
