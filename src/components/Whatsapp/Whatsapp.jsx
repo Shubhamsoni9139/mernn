@@ -10,11 +10,12 @@ const WhatsAppButton = () => {
 
   return (
     <div
-      className="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-4 cursor-pointer shadow-md transition duration-300 hover:bg-green-700"
-      onClick={handleWhatsAppClick}
-    >
-      <FaWhatsapp className="text-3xl" />
-    </div>
+  className="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-2 cursor-pointer shadow-md transition duration-300 hover:bg-green-600"
+  onClick={handleWhatsAppClick}
+>
+  <FaWhatsapp className="text-xl" />
+</div>
+
   );
 };
 
