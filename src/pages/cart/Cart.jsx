@@ -192,7 +192,7 @@ function Cart() {
         <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0 ">
           <div className="rounded-lg md:w-2/3 ">
             {cartItems.map((item, index) => {
-              const { title, price, description, imageUrl, quantity } = item;
+              const { title, price, imageUrl, quantity } = item;
               return (
                 <div
                   className="justify-between mb-6 rounded-lg border  drop-shadow-xl bg-white p-6  sm:flex  sm:justify-start"
@@ -204,9 +204,6 @@ function Cart() {
                     <div className="mt-5 sm:mt-0">
                       <h2 className="text-lg font-bold text-gray-900" style={{ color: mode === 'dark' ? 'white' : '' }}>
                         {title}
-                      </h2>
-                      <h2 className="text-sm  text-gray-900" style={{ color: mode === 'dark' ? 'white' : '' }}>
-                        {description}
                       </h2>
                       <p className="mt-1 text-xs font-semibold text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
                         ₹{price}
